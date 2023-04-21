@@ -1,0 +1,66 @@
+.recent-transc {
+    margin-top: 30px;
+    width: 75vh;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 7px;
+
+    .recent-transc-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid #DEE1E4;
+        background: #27314c;
+        position: sticky;
+        top: 0;
+
+        .recent-transc-header-text {
+            color: white;
+            margin: 12px 15px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .recent-transc-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #DEE1E4;
+
+        .rt-data {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 8px 15px;
+
+            .rt-month {
+                font-size: 15px;
+            }
+
+            .rt-day{
+                margin-left: 5px;
+                font-size: 25px;
+            }
+
+            .rt-receiver{
+                margin-left: 20px;
+                font-size: 20px;
+            }
+        }
+
+        .rt-price {
+            margin-right: 25px;
+            font-size: 20px;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
